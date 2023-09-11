@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Crimson+Text:wght@400;600&family=Merriweather:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/testing.css">
+    <link rel="icon" href="../img/fso.ico">
+    <title>Тестирование. Уставы</title>
+</head>
+<header>
+    <input type="checkbox" id="menu-checkbox" />
+    <nav role="navigation"><!-- навигация -->
+        <label for="menu-checkbox" class="toggle-button" data-open="Меню" data-close="Закрыть" onclick></label>
+        <ul class="main-menu"><!-- список пунктов меню -->
+            <li>
+                <a class="n_profil" href="../index.html">
+                    <p><b>Главная</b></p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="quiz__head">
+                <div class="head__content" id="head"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                    ducimus odit accusamus, illum quas magni provident odio praesentium commodi sint, porro harum, minus
+                    cupiditate architecto culpa aut ex dolore officia.</p> </div>
+            </div>
+            <div class="quiz__body">
+                <div class="buttons">
+                    <div class="buttons__content" id="buttons">
+                        <button class="button">Default button</button><br>
+                        <button class="button button_wrong">Wrong answer</button><br>
+                        <button class="button button_correct">Correct answer</button><br>
+                        <button class="button button_passive">Unclicked button</button><br>
+                    </div>
+                </div>
+
+                <div class="quiz__footer">
+                    <div class="footer__content" id="pages"> 0 / 0</div>
+                </div>
+                <button id="repeat" onclick='window.location.reload(true)'> Начать заново</button>
+            </div>
+
+
+
+        </main>
+    </div>
+    <script type="text/javascript" src="../js/testing_ustav.js"></script>
+</body>
+
+</html>
