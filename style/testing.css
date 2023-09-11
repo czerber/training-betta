@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fadcac;
+    font-family: Montserrat;
+}
+
+/* Шапка сайта - меню навигации */
+
+
+.main-menu>li>a>img {
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+
+}
+
+.main-menu>li>a>p {
+    padding-right: px;
+    padding-left: px;
+    font-family: Montserrat;
+
+
+}
+
+.main-menu>li>a {
+    border-right: 1px solid black;
+    /* margin-left: -10px; */
+}
+
+#menu-checkbox {
+    /* чекбокс скрыт */
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.main-menu {
+    /* пункты меню скрыты */
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    margin: 0;
+    background-color: #158467;
+    /* padding: 9px; */
+    margin-top: -10px;
+    border-bottom: 2px solid black;
+}
+
+.main-menu li {
+    /* пункты меню расположены вертикально */
+    /* каждый имеет ширину 100% */
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1px;
+
+}
+
+.main-menu a {
+    /* немного стилизуем ссылки */
+    display: block;
+    border-bottom: 1px solid black;
+    color: black;
+    padding: .5em;
+    text-decoration: none;
+}
+
+.main-menu a:hover {
+    text-decoration: none;
+}
+
+.toggle-button {
+    text-align: center;
+    display: block;
+    /* не забываем явно указать каким должен быть курсор */
+    cursor: pointer;
+    background-color: #158467;
+    color: #fff;
+    font-size: 18px;
+    margin-top: -10px;
+    border-bottom: 1px solid black;
+}
+
+.toggle-button:after {
+    /* получаем данные из атрибута data-open в html */
+    content: attr(data-open);
+    display: block;
+    margin: 10px 0;
+    padding: 10px 30px;
+}
+
+#menu-checkbox:checked+nav[role="navigation"] .main-menu {
+    /* когда чекбокс активен меню становится видимым */
+    position: static;
+
+}
+
+#menu-checkbox:checked+nav[role="navigation"] .toggle-button:after {
+    content: attr(data-close);
+    border-bottom: 1px solid black;
+    /* font-family:Montserrat; */
+}
+
+@media screen and (min-width: 640px) {
+    .toggle-button {
+        /* label скрыт */
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+
+    .main-menu {
+        /* меню отображается */
+        position: static;
+        /* margin: 0 auto; */
+        background-color: #158467;
+        height: auto;
+    }
+
+    .main-menu li {
+        /* теги <li> расположены в ряд */
+        /* width: calc(100% / 5); */
+        width: 100%;
+        text-align: center;
+        display: inline;
+        margin-right: 10px;
+        /* margin-right: -4px; */
+
+    }
+
+    .main-menu a {
+        display: inline-block;
+        margin-right: -4px;
+        font-size: 18px;
+        background-color: #158467;
+        text-decoration: none;
+        color: black;
+        text-transform: capitalize;
+        border-bottom: 0;
+
+    }
+
+
+    .n_ustav:hover {
+        background-color: #f3ce15;
+    }
+
+    .n_ps:hover {
+        background-color: #19b459;
+    }
+
+    .n_medical:hover {
+        background-color: #F80000;
+    }
+
+    .n_zsmp:hover {
+        background-color: #f60;
+    }
+
+
+    .n_profil:hover {
+        background-color: #C5D0E6;
+
+    }
+
+    .variants:hover {
+        background-color: #96cc60;
+    }
+
+    .button {
+
+        border: 0;
+        border-radius: 10px;
+        background: #6477EB;
+        color: #fff;
+        padding: 10px 25px;
+        width: 70%;
+        font-size: 12pt;
+        display: block;
+        margin: 20px auto;
+        cursor: pointer;
+    }
+
+}
+
+.variants {
+    margin-left: -10px;
+}
+
+.n_ustav {
+    border-right: 1px solid black;
+    margin-left: -10px;
+}
+
+.n_ustav:hover {
+    background-color: #96cc60;
+
+}
+
+.n_ps {
+    border-right: 1px solid black;
+    margin-left: -10px;
+}
+
+.n_ps:hover {
+    background-color: #19b459;
+}
+
+.n_medical {
+    border-right: 1px solid black;
+    margin-left: -10px;
+}
+
+.n_medical:hover {
+    background-color: #F80000;
+}
+
+.n_zsmp {
+    border-right: 1px solid black;
+    margin-left: -10px;
+}
+
+.n_zsmp:hover {
+    background-color: #f60;
+}
+
+.n_profil {
+    border-right: 1px solid black;
+}
+
+.n_profil:hover {
+    background-color: #C5D0E6;
+}
+
+.variants:hover {
+    background-color: #96cc60;
+
+}
+
+
+/* Наполнение теста */
+
+.wrapper {
+
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.main {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.quiz-frame {
+    border: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.quiz__head {
+    /* color: white; */
+    font-size: 20pt;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.head__content {
+    font-family: Montserrat;
+    font-size: 16pt;
+    padding: 15px;
+
+}
+
+.quiz__body {
+
+    margin: 10px;
+}
+
+.quiz__footer {
+    /* color: white; */
+    /* position: absolute; */
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+
+.footer__content {
+    font-size: 20px;
+    /* font-family:Montserrat; */
+    padding: 5px;
+    font-family: Montserrat;
+    padding-top: 40px;
+}
+
+.button {
+
+    border: 0;
+    border-radius: 10px;
+    background: #6477EB;
+    color: #fff;
+    padding: 10px 25px;
+    width: 70%;
+    font-size: 14pt;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+
+.button_wrong {
+    background: #EB6465;
+
+}
+
+.button_correct {
+    background: #5EB97D;
+}
+
+.button_passive {
+    background: #B3B3B3;
+}
+
+#repeat {
+    border: 0;
+    border-radius: 10px;
+    background: #6477EB;
+    color: #fff;
+    padding: 10px 25px;
+    width: 70%;
+    font-size: 12pt;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+
+    .head__content {
+        font-family: Montserrat;
+        font-size: 12pt;
+        padding: 5px;
+    }
+
+    .button {
+        font-family: Montserrat;
+        font-size: 12pt;
+    }
+
+}
