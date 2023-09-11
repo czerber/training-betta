@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Шрифты -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Crimson+Text:wght@400;600&family=Merriweather:wght@300&family=Montserrat:wght@300;500;600&family=Roboto:wght@300&display=swap"
+            rel="stylesheet">
+        <!-- Шрифты -->
+        <link rel="stylesheet" href="../../style/learning_medical.css">
+        <title>Медицинская подготовка</title>
+        <link rel="icon" href="../../img/fso.ico">
+    </head>
+<body>
+    <div class="nav_panel">
+        <div class="burger">
+            <span>
+                <a href=""></a>
+            </span>
+        </div>
+        <div class="home_page">
+            <a href="../../index.html">
+                <h4>Главная</h4>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav_menu">
+            <li>
+                <a href="../medical/medical_chapter1.html">1. Юридические аспекты и общие вопросы реанимации.</a>
+            </li>
+            <li>
+                <a href="../medical/medical_chapter2.html">2. Базовые реанимационные мероприятия. </a>
+            </li>
+            <li>
+                <a href="../medical/medical_chapter3.html">3. Базовые реанимационные мероприятия с автоматической
+                    наружной дефибрилляцией. </a>
+            </li>
+            <li>
+                <a href="../medical/medical_chapter4.html">4. Расширенные реанимационные мероприятия. </a>
+            </li>
+            <li>
+                <a href="../medical/medical_chapter5.html">5. Проведение реанимационных мероприятий в особых
+                    условиях.</a>
+            </li>
+            <li>
+                <details closed>
+                    <summary>Медицинские плакаты</summary> <br>
+                    <a href="../medical/medical_chapter6.html"><u>Групповая аптечка</u></a> <br> <br> 
+                    <a href="../medical/medical_chapter6_2.html"><u>Индивидуальная аптечка</u></a> <br> <br>
+                    <a href="../medical/medical_chapter6_3.html"><u>Боевой стресс</u></a> <br> <br>
+                    <a href="../medical/medical_chapter6_4.html"><u>Способы перемещения</u></a> <br> <br>
+                    <a href="../medical/medical_chapter6_5.html"><u>Условные зоны</u></a> <br> <br>
+                  </details>
+            </li>
+            <li>
+                <a href="../medical/medical_chapter7.html">Видеоматериалы</a>
+            </li>
+            <li>
+                <a href="../medical/medical_chapter8.html"></a>
+            </li>
+            <li>
+                <a href="../medical/medical_chapter9.html"></a>
+            </li>
+            <li>
+                <a href="../medical/medical_chapter10.html"></a>
+            </li>
+        </div>
+        <div class="content">
+            <div class="chapter"> <!-- Билет 1 -->
+                <div class="medical_placat">
+                    <img class="medical_placat" src="../../img/medical/medical_placat_2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Скрипт для бургера -->
+    <script>
+        document.querySelector('.burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.nav_menu').classList.toggle('open');
+            document.querySelector('.content').classList.toggle('open_2');
+        })
+
+    </script>
+    <!--                 -->
+</body>
+</html>
